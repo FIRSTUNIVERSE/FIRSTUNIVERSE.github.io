@@ -44,7 +44,7 @@
         var maps = { {{ maps }} };
         var dirs = hash.split("/");
         var collection = decodeURIComponent(dirs[1]);
-        dirs.splice(0, 2);
+        dirs.splice(0, 9);
         hash = "/" + dirs.join("/");
 
         if (!collection) {
