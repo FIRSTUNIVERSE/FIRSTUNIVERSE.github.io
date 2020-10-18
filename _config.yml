@@ -6,7 +6,7 @@
 # Site
 title: Personal Blog
 subtitle:
-description: 
+description: Stay Hungry, Stay Foolish!
 author: OU
 # Support language: de, en, fr-FR, id, ja, ko, pt-BR, pt, ru, zh-Hans, zh-hk, zh-tw
 language: zh-Hans
@@ -76,7 +76,7 @@ plugins:
 # ---------------------------------------------------------------
 
 # Put your favicon.ico into `assets/` directory.
-favicon: /assets/images/ONLYUNIVERSE.jpg
+favicon: /assets/favicon.jpg
 
 # Set default keywords (Use a comma to separate)
 keywords: "Jekyll, NexT"
