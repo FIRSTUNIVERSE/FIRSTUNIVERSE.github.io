@@ -34,7 +34,7 @@ BM算法是用来求解一个数列的最短线性递推式的算法
 
 ### 计算步骤
 
-$$ 一、delta<sub>i</sub>=\begin{cases}
+$$ 一、$delta_i$ = \begin{cases}
 delta<sub>i</sub>=0 & 不修改 \\
 delta<sub>i</sub>\neq0 & 计算fail<sub>cnt</sub>
 \end{cases}$$
