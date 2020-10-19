@@ -35,19 +35,19 @@ BM算法是用来求解一个数列的最短线性递推式的算法
 ### 计算步骤
 
 $$ 一、delta_i = \begin{cases}
-delta<sub>i</sub>=0 & 不修改 \\
-delta<sub>i</sub>\neq0 & 计算fail<sub>cnt</sub>
+delta_i=0 & 不修改 \\
+delta_i\neq0 & 计算fail_cnt
 \end{cases}$$
 
-$$ 二、faila<sub>i</sub>=i\begin{cases}
-cnt=0 & R<sub>cnt</sub>=\{\overbrace{0,0,···,0}^{i个}\} \\
+$$ 二、faila_i=i\begin{cases}
+cnt=0 & R_cnt=\{\overbrace{0,0,···,0}^{i个}\} \\
 cnt\neq0 & 转三
 \end{cases}$$
 
 $$ 三、cnt\neq0 \begin{cases}
-mul={delta<sub>i</sub> \over delt<sub>fail</sub>cnt-1<sub></sub>\ } & \\
-R′=\{\overbrace{0,0,···,0}^{i-fail<sub>cnt-1</sub>个},mul,-mul·R<sub>cnt-1</sub>\}&\\
-R<sub>cnt+1</sub>=R<sub>cnt</sub>+R′(按位相加)
+mul={delta_i \over delt_fail cnt-1\ } & \\
+R′=\{\overbrace{0,0,···,0}^{i-fail_cnt-1个},mul,-mul·R_cnt-1\}&\\
+R_cnt+1=R_cnt+R′(按位相加)
 \end{cases}$$
 
 ### 实例
