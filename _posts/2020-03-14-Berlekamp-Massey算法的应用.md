@@ -26,7 +26,7 @@ BM算法是用来求解一个数列的最短线性递推式的算法
 
 - fail<sub>k</sub>=i&emsp;&emsp;&emsp;&emsp;&emsp; //表示R第k次出错，在a<sub>i</sub>处出错
 
-- mul=$delta<sub>i</sub> \over delt<sub>fail</sub>cnt-1<sub></sub>$
+- mul=$$delta_i \over delt_{fail_{cnt-1}}$$
 
 - R′={ &emsp;&emsp;(i-fail<sub>cnt-1</sub>-1个0)&emsp;&emsp;, &emsp;mul,&emsp;-mul·R<sub>cnt-1</sub>}
 
@@ -45,7 +45,7 @@ cnt\neq0 & 转三
 \end{cases}$$
 
 $$ 三、cnt\neq0 \begin{cases}
-mul={delta_i \over delt_{fail}cnt-1\ } & \\
+mul={delta_i \over delt_{fail_{cnt-1}}\ } & \\
 R′=\{\overbrace{0,0,···,0}^{i-fail_{cnt-1}个},mul,-mul·R_{cnt-1}\}&\\
 R_{cnt+1}=R_{cnt}+R′(按位相加)
 \end{cases}$$
